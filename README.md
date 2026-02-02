@@ -103,6 +103,8 @@ pnpm gateway:watch
 
 Note: `pnpm openclaw ...` runs TypeScript directly (via `tsx`). `pnpm build` produces `dist/` for running via Node / the packaged `openclaw` binary.
 
+**Windows (no WSL/Git Bash):** Use `pnpm run build:win` instead of `pnpm build`; the A2UI Canvas bundle is skipped. Run the CLI with `node openclaw.mjs` or `pnpm openclaw`.
+
 ## Security defaults (DM access)
 
 OpenClaw connects to real messaging surfaces. Treat inbound DMs as **untrusted input**.
